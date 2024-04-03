@@ -1,15 +1,10 @@
 import json
 import random
+from components.f_reutilizable import all_edades
 
-poblacion=json.load(open("edades.json"))
+poblacion=json.load(open("components/edades.json"))
 
-edades=[]
-muestra=[]
-
-for individuo in poblacion:
-    edades.append(individuo["age"])
-
-edades_auxiliar=edades.copy()
+edades=all_edades()
 
 acc=0
 cant_muestra=20
@@ -28,6 +23,6 @@ for j in range(1, 21):
     else:
         muestra_sistematica.append(edades[acc - len(edades)])
 
-print("muesta sistematica", muestra_sistematica)
+print("muesta sistematica: ", muestra_sistematica)
 print ("promedio de la muesta sistematica", sum(muestra_sistematica)/len(muestra_sistematica))
 
