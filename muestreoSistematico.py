@@ -3,23 +3,13 @@ import random
 
 poblacion=json.load(open("edades.json"))
 
-# print("poblacion", poblacion)
-
 edades=[]
 muestra=[]
 
 for individuo in poblacion:
     edades.append(individuo["age"])
-print("promedio de edades", sum(edades)/len(edades))
 
 edades_auxiliar=edades.copy()
-
-for _ in range(0, 21):
-    indice_random=random.randint(0, len(edades_auxiliar)-1)
-    valor=edades_auxiliar.pop(indice_random)
-    muestra.append(valor)
-print("valores eleminados", muestra)
-print("promedio de muestra", sum(muestra)/len(muestra))
 
 acc=0
 cant_muestra=20
