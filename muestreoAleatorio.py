@@ -1,6 +1,6 @@
 import json
 import random
-from components.f_reutilizable import all_edades
+from components.all_age import all_edades
 
 poblacion=json.load(open("components/edades.json"))
 

@@ -8,6 +8,7 @@ def all_edades():
     for individuo in poblacion:
         edades.append(individuo["age"])
     # print("promedio de edades", sum(edades)/len(edades))
+    # print("cantidad: ", len(edades))
     return edades.copy()
 
-# all_edades()
+all_edades()
