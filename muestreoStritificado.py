@@ -38,6 +38,7 @@ for i in range(muestra_temprana):
     muestra_strintificado.append(valor_muestra)
 
 muestra_media = int(len(adultez_media) / len(edades) * 100)
+# el metodo math.ceil lo use para redondear el numero(ejemplo 7.80 lo pasa a 8)
 muestra_media=math.ceil((muestra_media/100)*cant_muestra)
 print("cantidad de la muestra media: ", muestra_media)
 
