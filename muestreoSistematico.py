@@ -24,5 +24,5 @@ for j in range(1, 21):
         muestra_sistematica.append(edades[acc - len(edades)])
 
 print("muesta sistematica: ", muestra_sistematica)
-print ("promedio de la muesta sistematica", sum(muestra_sistematica)/len(muestra_sistematica))
+print ("promedio de la muesta sistematica", int(sum(muestra_sistematica)/len(muestra_sistematica)))
 

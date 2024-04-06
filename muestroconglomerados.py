@@ -21,4 +21,4 @@ while len(muestreo_conglomerados) < cant_muestra:
     edades_copia.pop(indice_random)
 
 print("Muestra de conglomerados :", muestreo_conglomerados)
-print("Promedio de la muestra de conglomerados :", int(sum(muestreo_conglomerados) / cant_muestra))
+print("Promedio de edades de la muestra de conglomerados :", int(sum(muestreo_conglomerados) / cant_muestra))

@@ -14,4 +14,4 @@ for _ in range(0, 21):
     muestra_aleatoria.append(valor)
 
 print("muesta aleatoria: ", muestra_aleatoria)
-print("promedio de la muestra aleatoria: ", sum(muestra_aleatoria)/len(muestra_aleatoria))
+print("promedio de la muestra aleatoria: ", int(sum(muestra_aleatoria)/len(muestra_aleatoria)))
